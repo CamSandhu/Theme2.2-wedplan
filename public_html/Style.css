@@ -1,0 +1,396 @@
+Body{
+    font-family: Josefin Sans,Playfair Display,sans-serif,helvetica;
+    margin: 0;
+    font-size: 1.1em;
+    overflow-x: auto;
+
+}
+
+
+img{
+    display: block;
+    max-width: 100%;
+
+    /*helps to shrink down the images to the dimesions of uits container*/
+}
+
+/*<!------------------------Navbar---------------->*/  
+
+nav{
+
+    color:white;
+    padding: 15px 0;
+    height:auto;
+}
+header{
+    background-color:rgba(0,0,0,0.3);
+    margin: 0;
+    width: 100%;
+}
+nav ul{
+    list-style: none;
+
+}
+nav li{
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+
+}
+nav li a{
+    padding: 5px;
+}
+
+nav div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    display:none;
+    margin-left: 10px;
+}
+#nav-responsive{
+    display: none;
+    text-align: center;
+}
+
+#nav-responsive ul li{
+    display: block;
+}
+/*---------------Top Heading------------------*/
+#top-img  h1{
+    font-family: Norican;
+    font-size: 60px;
+    color: white;
+    margin-top: 120px;
+}
+
+.active{
+    border: 1px solid white;
+}
+
+/*-------------------------main---------------------------*/
+
+#top-img {
+    background: url("src/home1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:540px;
+
+}
+#box1{
+    background: url("src/box1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    float: left;
+
+}
+#box2{
+    background: url("src/box2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    float: right;
+
+}
+#boxes article{
+    height: 250px;
+    box-shadow:2px 4px 4px  #888888;
+    text-align: center;
+    width: 400px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#boxes{
+    grid-template-columns:1fr;
+    grid-gap:50px;
+    justify-items:center;
+    padding-bottom: 30px;
+    padding: 0 190px 0 190px;
+
+}
+#top-img p{
+    text-align: center;
+}
+
+#top-img p button,#planner button{
+    padding: 5px 20px;
+    border: 1px solid white;
+    background: grey;
+    color: white;
+    font-size: 19px;
+    cursor: pointer;
+    outline: none;
+}
+#top-img p button:hover,#planner button:hover{
+    color: grey;
+    background: white;
+}
+
+.testimonial #couple1{
+    background:url('src/couple1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    box-shadow:2px 2px 6px 6px  #888888;
+    text-align: center;
+    height: 250px;
+    width: 300px;
+    margin: 5px;
+    cursor: pointer;
+    outline: 3px solid white;
+}
+
+.testimonial #couple2{
+    background:url('src/couple2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+    box-shadow:2px 2px 6px 6px  #888888;
+    text-align: center;
+    width: 300px;
+    margin: 5px;
+    cursor: pointer;
+    outline: 3px solid white;
+}
+.testimonial #couple3{
+    background:url('src/couple3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+    box-shadow:2px 2px 6px 6px  #888888;
+    text-align: center;
+    width: 300px;
+    margin: 5px;
+    cursor: pointer;
+    outline: 3px solid white;
+}
+
+#wed-examples,footer{
+    grid-template-columns:1fr 1fr 1fr;
+    justify-items:center;
+}
+/*------------------------bar icon-----------------------*/
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+#logo{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+
+/*---------------------------icons---------------------------------*/
+
+#icons a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.6);
+    font-size: 25px;
+    padding: 4px;
+}
+#icons{
+    margin-top: 80px;
+}
+/*-------------------------footer----------------------------*/
+
+footer{
+    background-color:black;
+    color:white;
+    margin-top: 70px;
+    padding: 20px 20px;
+}
+footer h3{
+    color: white;
+    padding-bottom: 20px;
+    font-size: medium;
+}
+#socialicons,#address,#contact{
+    color: #8c8c8c;
+    font-size: 15px;
+    line-height: 15px;
+}
+/*---------------form-------------------*/
+#form1 ,#form2{
+    background-color:rgba(0,0,0,0.4);
+    text-align: center;
+    width: 60%;
+    position: absolute;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+}
+#form1 form input, #form2  form input{
+    border: none;
+    padding: 10px;
+    width: 90%;;
+    border-radius:5px;
+    outline: none;
+    margin-bottom: 15px;
+}
+#form1 textArea,#form2 textArea{
+    border: none;
+    width: 91%;
+    border-radius:5px;
+    height: 120px;
+    outline: none;
+}
+#form1 button,#form2 button{
+    width: 90%;
+    outline: none;
+}
+
+/*-------------------heading h2------------------*/
+h1{
+    text-align: center;
+    color: #222222;
+    margin-bottom: 60px;
+} 
+h3{
+    text-align: center;
+    color:#222222;
+    margin-bottom: 0;
+}
+
+
+/*---------------------------cultural weddings page-------------------*/
+
+#cultural-des {
+    display: grid;
+    grid-template-columns:1fr;
+    justify-items:center;
+    padding: 80px 80px;
+
+}
+#cultural-des p{
+    width: 70%;
+}
+#cultural-image1{
+    grid-area:"image";
+    background: url("src/box1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    /*    width: 70%;*/
+
+}
+#cultural-image2{
+    grid-area:"image";
+    background: url("src/box1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    /*    width: 70%;*/
+}
+#cultural-image3{
+    grid-area:"image";
+    background: url("src/box1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    /*    width: 70%;*/
+}
+
+#planner{
+    grid-area:"planner";
+    height: 400px;
+    background-color: rgba(220,220,220,0.3);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#planner h3{
+    margin: 0;
+    padding-bottom: 20px;
+}
+#planner select{
+    border: none;
+    width: 85%;
+    padding: 10px;
+    border-radius:10px;
+    margin-bottom: 20px;
+    outline: none;
+}
+#cultural-wed-grid{
+    grid-template-columns:13fr 2fr;
+    padding: 60px 0px;
+    justify-content:center;
+
+}
+/*---------------------grid class------------------*/
+.grid{
+    display: grid;
+
+}
+/*----------------------Media queries----------------*/
+
+@media screen and (max-width: 480px) {
+
+    /*-----------------navbar--------------------*/ 
+    nav li{
+        display: block;
+        padding-bottom: 20px;
+    }
+    nav ul{
+        display: none;
+    }
+
+    nav div{
+        display: block;
+    }
+    nav{
+        padding: 5px 0;
+        text-align: center;
+    }
+    #boxes{
+        grid-template-columns:1fr;
+        padding: 0;
+    }
+
+    #boxes p{
+        padding: 15px;
+    }
+    #wed-examples,footer{
+        grid-template-columns:1fr;
+
+    }
+
+}
+@media screen and (max-width: 768px){
+      #cultural-wed-grid{
+            grid-template-areas:
+                "image",
+                "planner";
+        }
+        
+
+}
